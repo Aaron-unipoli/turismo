@@ -22,96 +22,7 @@
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    /* GLOBAL STYLES --------------------------------------------- */
-    body {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      color: #5a5a5a;
-    }
-
-    /* CUSTOMIZE THE CAROUSEL -------------------------------------------- */
-    .carousel {
-      margin-bottom: 4rem;
-    }
-
-    .carousel-caption {
-      bottom: 3rem;
-      z-index: 10;
-    }
-
-    .carousel-item {
-      height: 925px;
-    }
-
-    .carousel-item>img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 925px;
-    }
-
-    /* MARKETING CONTENT -------------------------------------------------- */
-    .marketing .col-lg-4 {
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-
-    .marketing h2 {
-      font-weight: 400;
-    }
-
-    .marketing .col-lg-4 p {
-      margin-right: .75rem;
-      margin-left: .75rem;
-    }
-
-    /* Featurettes ------------------------- */
-    .featurette-divider {
-      margin: 5rem 0;
-    }
-
-    .featurette-heading {
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -.05rem;
-    }
-
-    /* RESPONSIVE CSS -------------------------------------------------- */
-    @media (min-width: 40em) {
-      .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-      }
-
-      .featurette-heading {
-        font-size: 50px;
-      }
-    }
-
-    @media (min-width: 62em) {
-      .featurette-heading {
-        margin-top: 7rem;
-      }
-    }
-  </style>
+ 
 
   <!-- Custom styles for this template -->
   <link href="carousel.css" rel="stylesheet">
@@ -138,6 +49,12 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Pueblos Magicos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" id="openModal2" href="#" aria-current="page">Suscribete</a> 
+            </li>
+            <li>
+              <a class="nav-link" id="openModal" href="#" aria-current="page">Login</a>
+            </li>
           </ul>
           <form class="d-flex">
             <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
@@ -157,12 +74,53 @@
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-      
+    
     </div>
     
     <div class="container">
       
       <div class="row">
+          <!--Modal pantalla emergente de login-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="titulo_login">Login</h2>
+        <form>
+          <label for="nombre">Usuario:</label>
+          <input type="text" id="nombre" name="nombre"><br><br>
+          <label for="email">Pass:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <input type="submit" value="Iniciar">
+        </form>
+      </div>
+    </div>
+
+     <!--Modal pantalla emergente de Inscribirse-->
+     <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="titulo_login">Registrate</h2>
+        <form>
+          <label for="user">Usuario</label>
+          <input type="text" id="user" name="Usuario"><br><br>
+          <label for="pass">Contraseña</label>
+          <input type="password" id="pass" name="Contraseña"><br><br>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email"><br><br>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre"><br><br>
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos"><br><br>
+          <lable for="edad">Edad</lable>
+          <input type="date" id="Edad" name="edad"><br><br>
+          <label for="text-area">Dirección</label>
+          <textarea name="text-area" id="dir">Escribe</textarea><br><br>
+          <input type="submit" value="Iniciar">
+        </form>
+      </div>
+    </div>
+  
+    <script src="js/script.js"></script>
         <div class="col-md-9" id="colum1">
           <div id="titulo_lugar">
             <h2>Aquí va el título</h2>
