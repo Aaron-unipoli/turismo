@@ -1,43 +1,33 @@
-// Obtener el primer modal
-var modal = document.getElementById("modal");
-// Obtener el segundo modal
-var modal2 = document.getElementById("modal2");
+// Seleccionamos los enlaces para abrir los modales
+const btnAbrirModalLogin = document.querySelector("#openModal");
+const btnAbrirModalRegistro = document.querySelector("#openModal2");
 
-// Obtener el botón que abre el primer modal
-var btn = document.getElementById("openModal");
-// Obtener el botón que abre el segundo modal
-var btn2 = document.getElementById("openModal2");
+// Seleccionamos los botones de cierre de cada modal
+const btnCerrarModalLogin = document.querySelector("#btn-cerraModal");
+const btnCerrarModalRegistro = document.querySelector("#btn-cerraModalRegistro");
 
-// Obtener el elemento <span> que cierra el primer modal
-var span = document.getElementsByClassName("close")[0];
-// Obtener el elemento <span> que cierra el segundo modal
-var span2 = document.getElementsByClassName("close")[1];
+// Seleccionamos los modales
+const modalLogin = document.querySelector("#modal");
+const modalRegistro = document.querySelector("#modalRegistro");
 
-// Cuando el usuario hace clic en el botón del primer modal, lo abre
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+// Abrir el modal de Login
+btnAbrirModalLogin.addEventListener("click", (event) => {
+  event.preventDefault();  // Evitar el comportamiento por defecto del link
+  modalLogin.showModal();  // Abre el modal de Login
+});
 
-// Cuando el usuario hace clic en el botón del segundo modal, lo abre
-btn2.onclick = function() {
-  modal2.style.display = "block";
-}
+// Abrir el modal de Registro (Suscripción)
+btnAbrirModalRegistro.addEventListener("click", (event) => {
+  event.preventDefault();  // Evitar el comportamiento por defecto del link
+  modalRegistro.showModal(); // Abre el modal de Registro
+});
 
-// Cuando el usuario hace clic en <span> (x) del primer modal, lo cierra
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// Cerrar el modal de Login con el botón 'X'
+btnCerrarModalLogin.addEventListener("click", () => {
+  modalLogin.close();      // Cierra el modal de Login
+});
 
-// Cuando el usuario hace clic en <span> (x) del segundo modal, lo cierra
-span2.onclick = function() {
-  modal2.style.display = "none";
-}
-
-// Cuando el usuario hace clic en cualquier lugar fuera de los modales, los cierra
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  } else if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-}
+// Cerrar el modal de Registro con el botón 'X'
+btnCerrarModalRegistro.addEventListener("click", () => {
+  modalRegistro.close();    // Cierra el modal de Registro
+});

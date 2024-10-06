@@ -57,7 +57,7 @@
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Escribe tu destino">
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
@@ -66,59 +66,38 @@
   </header>
 
   <main>
-    <div class="container_fluid">
+    <div class="container-video">
       <div class="row">
         <div class="col-lg-12">
-          <iframe width="1920px" height="900px"
+          <iframe width="100%" height="900px"
             src="https://www.youtube.com/embed/5S990CpvITc?si=9ik-MbZr-3aUDWMd?mute=1?" title="YouTube video player"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     
+      </div>
     </div>
     
-    <div class="container">
+   <!--Modal-->
+   <dialog  id="modal">
+    <h1>Login</h1>
+    <br>
+    <form method="dialog">
+      <label for="usuario">usuaro
+        <br>
+        <input type="text">
+      </label>
+      <br>
+      <label for="Pass">pass 
+        <br><input type="text"> 
+      </label>
+      <br>
+      <br>
+      <button id="enviar">enviar</button>
       
-      <div class="row">
-          <!--Modal pantalla emergente de login-->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="titulo_login">Login</h2>
-        <form>
-          <label for="nombre">Usuario:</label>
-          <input type="text" id="nombre" name="nombre"><br><br>
-          <label for="email">Pass:</label>
-          <input type="email" id="email" name="email"><br><br>
-          <input type="submit" value="Iniciar">
-        </form>
-      </div>
-    </div>
-
-     <!--Modal pantalla emergente de Inscribirse-->
-     <div id="modal2" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="titulo_login">Registrate</h2>
-        <form>
-          <label for="user">Usuario</label>
-          <input type="text" id="user" name="Usuario"><br><br>
-          <label for="pass">Contraseña</label>
-          <input type="password" id="pass" name="Contraseña"><br><br>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email"><br><br>
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre"><br><br>
-          <label for="apellidos">Apellidos</label>
-          <input type="text" id="apellidos" name="apellidos"><br><br>
-          <lable for="edad">Edad</lable>
-          <input type="date" id="Edad" name="edad"><br><br>
-          <label for="text-area">Dirección</label>
-          <textarea name="text-area" id="dir">Escribe</textarea><br><br>
-          <input type="submit" value="Iniciar">
-        </form>
-      </div>
-    </div>
+    </form>
+    <button id="btn-cerraModal">X</button>
+  </dialog>
   
     <script src="js/script.js"></script>
         <div class="col-md-9" id="colum1">
@@ -142,6 +121,14 @@
               5 de 5 Stars
 
             </div>
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29197.
+              43216619684!2d-105.18366590245213!3d23.83001038139377!2m3!1f0!2f0!3f0!3m2!
+              1i1024!2i768!4f13.1!3m3!1m2!1s0x869966f4f12de289%3A0xadf3a04b7bc31343!2s34
+              350%20Los%20Berros%2C%20Dgo.!5e0!3m2!1ses!2smx!4v1727886608461!5m2!1ses!2smx" 
+              width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
           </div>
         </div>
@@ -152,7 +139,7 @@
     <!-- FOOTER -->
     <footer class="container_footer">
       <p class="float-right"><a href="#">Back to top</a></p>
-      <p id="Company">&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <p id="Company">&copy; 2024-2050 Ichiban, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
   </main>
 

@@ -32,6 +32,8 @@
 </head>
 
 <body>
+  
+
 
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -60,15 +62,16 @@
             </li>
           </ul>
           <form class="d-flex">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" style="border: 1px red;">
-            <button class="btn btn-outline-success"  type="submit">Search</button>
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Escribe tu destino" style="border: 1px red;">
+            <button class="btn btn-outline-success"  type="submit">Buscar</button>
           </form>
         </div>
       </div>
     </nav>
   </header>
-
+  
   <main>
+    
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -129,54 +132,66 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-
-  <!--Modal pantalla emergente de login-->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="titulo_login">Login</h2>
-        <form>
-          <label for="nombre">Usuario:</label>
-          <input type="text" id="nombre" name="nombre"><br><br>
-          <label for="email">Pass:</label>
-          <input type="email" id="email" name="email"><br><br>
-          <input type="submit" value="Iniciar">
-        </form>
-      </div>
-    </div>
-
-     <!--Modal pantalla emergente de Inscribirse-->
-     <div id="modal2" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="titulo_login">Registrate</h2>
-        <form>
-          <label for="user">Usuario</label>
-          <input type="text" id="user" name="Usuario"><br><br>
-          <label for="pass">Contraseña</label>
-          <input type="password" id="pass" name="Contraseña"><br><br>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="Email"><br><br>
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre"><br><br>
-          <label for="apellidos">Apellidos</label>
-          <input type="text" id="apellidos" name="apellidos"><br><br>
-          <lable for="edad">Edad</lable>
-          <input type="date" id="Edad" name="edad"><br><br>
-          <label for="text-area">Dirección</label>
-          <textarea name="text-area" id="dir">Escribe</textarea><br><br>
-          <input type="submit" value="Iniciar">
-        </form>
-      </div>
-    </div>
-  
-    <script src="js/script.js"></script>
+ 
     
 
 
     <!-- Marketing messaging and featurettes
   ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!--Inico de modal-->
+   <!-- Modal de Login -->
+<dialog id="modal">
+  <h1>Login</h1>
+  <br>
+  <form method="dialog">
+    <label for="usuario">Usuario
+      <br>
+      <input type="text" id="usuario">
+    </label>
+    <br>
+    <label for="Pass">Contraseña
+      <br>
+      <input type="password" id="pass">
+    </label>
+    <br>
+    <br>
+    <button id="enviar">Enviar</button>
+  </form>
+  <button id="btn-cerraModal">X</button>
+</dialog>
+
+<!-- Modal de Registro -->
+<dialog  open id="modalRegistro">
+  <h1>Registro</h1>
+  <br>
+  <form method="dialog">
+    <label for="nombre">Nombre
+      <br>
+      <input type="text" id="nombre">
+    </label>
+    <br>
+    <label for="apellido">Apellido
+      <br>
+      <input type="text" id="apellido">
+    </label>
+    <br>
+    <label for="email">Email
+      <br>
+      <input type="email" id="email">
+    </label>
+    <br>
+    <label for="passRegistro">Contraseña
+      <br>
+      <input type="password" id="passRegistro">
+    </label>
+    <br>
+    <br>
+    <button id="registrar">Registrar</button>
+  </form>
+  <button id="btn-cerraModalRegistro">X</button>
+</dialog>
+<!--Fin de modales-->
 
     <div class="container marketing">
 
@@ -186,40 +201,41 @@
           <img class="bd-placeholder-img rounded-circle" src="img/hotel.png" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
             <title>Hoteles</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            <rect width="100%" height="100%" fill="#777" />
         </img>
 
           <h2>Hospedaje</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
             vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
             magna.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Detalles &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded-circle" src="img/logo durango.jpeg" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
             <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            <rect width="100%" height="100%" fill="#777" />
         </img>
 
           <h2>Actividades</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
             mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris
             condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Detalles &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img   class="bd-placeholder-img rounded-circle" src="img/pngegg.png" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
             <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            <rect width="100%" height="100%" fill="#777" />
         </img>
 
           <h2>Comida</h2>
+          
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
             felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
             massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">Detalles &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -229,17 +245,19 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Tunel de mineria <span class="text-muted">Una aventura cautivadora</span>
+        <div class="col-md-6">
+          <h2 class="featurette-heading">Fundación de la ciudad de Durango (1563)<span class="text-muted">&nbsp; Elnacimiento de una legenda.</span>
           </h2>
-          <p class="lead">Sumergete en la historia de la mineria en Durango, una historia con cientos de años de antiguedad</p>
+          <p class="lead">
+            El 8 de julio de 1563, el explorador español Francisco de Ibarra fundó la ciudad de Durango, originalmente conocida como Villa de Guadiana. Este evento marcó el inicio del desarrollo colonial en la región, con Durango convirtiéndose en un importante centro administrativo y comercial del norte de Nueva España. La ciudad fue sede del obispado y tuvo un papel crucial en las rutas comerciales que conectaban la minería y otras actividades económicas del norte con el centro del virreinato.
+          </p>
         </div>
-        <div class="col-md-5">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/tunel_1-1024x589.jpg" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
+        <div class="col-md-6">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/382908.jpeg" width="900px"
+            height="900px" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
             preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
             <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            <rect width="100%" height="100%" fill="#eee" />
         </img>
 
         </div>
@@ -248,17 +266,16 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Ruta del Mezcal<span class="text-muted">El sabor de México</span></h2>
-          <p class="lead">La Ruta del Mezcal en Nombre de Dios, integra 14 vinatas y fue creada para que turistas y los mismos duranguenses conozcan de una manera didáctica el proceso de jimar, el proceso de cocción,
-             la molienda y luego ver el resultado final que son las lágrimas del mezcal, y disfrutar de las artesanías y gastronomía típica.</p>
+        <div class="col-md-6 order-md-2">
+          <h2 class="featurette-heading"> Revolución Mexicana en Durango (1910-1920)<span class="text-muted">La lucha armada</span></h2>
+          <p class="lead">Durango fue un estado clave durante la Revolución Mexicana. Sus habitantes participaron activamente en el conflicto, y algunos de los líderes revolucionarios más importantes, como Francisco Villa (Pancho Villa), tuvieron raíces en esta región. Villa, uno de los personajes más influyentes del movimiento revolucionario, operó extensamente en Durango y sus alrededores, contribuyendo a los cambios sociales y políticos que ocurrieron en México durante y después del conflicto.</p>
         </div>
-        <div class="col-md-5 order-md-1">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/en-la-ruta-del-mezcal.jpg" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
+        <div class="col-md-6 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="img/rev1.jpg" width="900"
+            height="900" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
             preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
             <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            <rect width="100%" height="100%" fill="#eee" />
         </img>
 
         </div>
@@ -267,19 +284,18 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Puente De ojuela<span class="text-muted">Mina abandonada</span></h2>
-          <p class="lead">Se encuentra enclavado entre dos grandes cerros, donde estuvo ubicada una mina y el lugar de vivienda de los trabajadores de la misma,
-             que fue abandonada posteriormente.
-
+        <div class="col-md-6">
+          <h2 class="featurette-heading">Desarrollo minero en el siglo XVIII y XIX<span class="text-muted">Mineria como eje de desarrollo</span></h2>
+          <p class="lead">
+            Durango fue conocido por su vasta riqueza minera, particularmente en la extracción de plata, oro y otros minerales. Durante el siglo XVIII, la minería impulsó el crecimiento económico del estado y atrajo a muchos colonos. Posteriormente, en el siglo XIX, este sector se mantuvo como uno de los pilares económicos, lo que permitió el surgimiento de una aristocracia minera y dio forma a las estructuras sociales y políticas de la región.
             .</p>
         </div>
-        <div class="col-md-5">
-          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            src="img/Dgo_puente-ojuela_GGmd-ok.webp" height="500" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
+        <div class="col-md-6">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="900"
+            src="img/Dgo_puente-ojuela_GGmd-ok.webp" height="900" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: 500x500"
             preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
             <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+            <rect width="100%" height="100%" fill="#eee" />
         </img>
 
         </div>
@@ -291,16 +307,16 @@
 
     </div><!-- /.container -->
 
-
+   
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      <p>&copy; 2024-2050 Ichiba, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
     </footer>
   </main>
 
 
-
+  <script src="js/script.js"></script>
 </body>
-
+   
 </html>
