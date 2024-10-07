@@ -162,7 +162,46 @@
 </dialog>
 
 <!-- Modal de Registro -->
-<dialog  open id="modalRegistro">
+ <div class="container-modal ">
+  <div class="row">
+    <div class="col-lg-6">
+
+    </div>
+    <div class="col-lg-6">
+      <dialog id="modalRegistro">
+        <h1>Registro</h1>
+        <br>
+        <form method="dialog">
+          <label for="nombre">Nombre
+            <br>
+            <input type="text" id="nombre">
+          </label>
+          <br>
+          <label for="apellido">Apellido
+            <br>
+            <input type="text" id="apellido">
+          </label>
+          <br>
+          <label for="email">Email
+            <br>
+            <input type="email" id="email">
+          </label>
+          <br>
+          <label for="passRegistro">Contraseña
+            <br>
+            <input type="password" id="passRegistro">
+          </label>
+          <br>
+          <br>
+          <button id="registrar">Registrar</button>
+        </form>
+        <button id="btn-cerraModalRegistro">X</button>
+      </dialog>
+
+    </div>
+  </div>
+ </div>
+<dialog id="modalRegistro">
   <h1>Registro</h1>
   <br>
   <form method="dialog">

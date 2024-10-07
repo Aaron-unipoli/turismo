@@ -40,7 +40,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 925px;
+  height: 1000px;
 }
 
 .carousel-item>img {
@@ -48,7 +48,7 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 925px;
+  height: 1000px;
 }
 
 
@@ -116,7 +116,13 @@ dialog{
 }
 
   /* Estilos para quitar bordes y cambiar color de fondo */
- .modal{
+
+  .container-modal{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+ #modal{
   background-color: rgb(51, 58, 56);
   border: 1px;
   text-align: center;
@@ -127,8 +133,9 @@ dialog{
   opacity: 97.5%;
   color: beige;
   align-items: center;
-  right: -55%;
-  top: 7.5%;
+  right: 0%;
+  top: 6%;
+
 
  }
  #enviar{
@@ -139,6 +146,6 @@ dialog{
 
  }
 
- .modal::backdrop{
-  background-color: rgba(0, 0, 0, 0.6)
+ #modal::backdrop{
+  background-color: rgba(0, 0, 0, 0.7)
  }
