@@ -1,3 +1,4 @@
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -40,7 +41,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 1000px;
+  height: 1200px;
 }
 
 .carousel-item>img {
@@ -48,7 +49,8 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 1000px;
+  height: 1200px;
+  margin-bottom: 0px;
 }
 
 
@@ -122,12 +124,28 @@ dialog{
     justify-content: flex-end;
     margin: 0;
   }
+  #modalRegistro{
+    background-color: rgb(51, 58, 56);
+    border: 1px;
+    text-align: center;
+    width: 800px;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px rgb(22, 48, 16);
+    opacity: 97.5%;
+    color: beige;
+    align-items: center;
+    right: 0%;
+    top: 6%;
+  
+  
+   }
  #modal{
   background-color: rgb(51, 58, 56);
   border: 1px;
   text-align: center;
   width: 800px;
-  height: 100%;
+  height: 80%;
   border-radius: 5px;
   box-shadow: 1px 5px 5px rgb(22, 48, 16);
   opacity: 97.5%;
@@ -149,3 +167,39 @@ dialog{
  #modal::backdrop{
   background-color: rgba(0, 0, 0, 0.7)
  }
+
+
+.container_footer{
+  height: 100%;
+  background-color:#1E1E1E;
+  margin-bottom: 0px;
+  height: 100px;
+  position:absolute;
+  width: 100%;
+  color: #ebebeb;
+  align-items: center;
+  padding: 30px;
+  font-size: large;
+}
+.link-footer{
+  color: #ebebeb;
+  text-decoration: none;
+  
+}
+
+.bd-placeholder-img{
+  transition: filter 0.5s ease;
+  margin: 0px;
+
+}
+.bd-placeholder-img:hover{
+  filter: brightness(1.5); /* Aumenta el brillo un 50% */
+
+  
+}
+
+
+.sub_menu{
+  position:relative;
+  margin: 0;
+}
