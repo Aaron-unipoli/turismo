@@ -10,9 +10,27 @@
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+    font-size: 12px;
   }
 }
+@media (min-height: 200px) {
+  .carousel {
+    min-height: 500px; /* Altura mínima del carrusel */
+  }
+}
+
+@media (max-height: 400px) {
+  .carousel {
+    min-height: 300px; /* Altura mínima para pantallas más pequeñas */
+  }
+}
+@media (min-width:768px){
+
+  .carousel-caption{
+    font-size: small;
+  }
+}
+  
 
 /* GLOBAL STYLES
 --------------------------------------------- */
@@ -192,6 +210,10 @@ dialog{
   text-decoration: none;
   
 }
+.link-footer:hover{
+  text-decoration: none;
+  color: #ebebeb;
+}
 
 
 .img_sub_menu{
@@ -206,16 +228,23 @@ dialog{
 
 }
 
+
 .btn_estilo {
   background-color: #365B2D; /* Color de fondo personalizado */
   color: white; /* Color del texto */
   border: none; /* Elimina el borde si no quieres uno */
-  width: 100px;
+  width: 150px;
   padding: 10px;
   height: 50px;
   border-radius: 8px;
+  opacity: 0;
+  transition: 0.6s; 
+  ;
   
-  
+
+}
+.btn_estilo:hover{
+  background-color: #1E1E1E;
 }
 .btn_link{
   color: #ebebeb;
@@ -258,6 +287,7 @@ dialog{
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
+  display: flexbox;
 }
 
 
@@ -305,4 +335,55 @@ dialog{
   padding-top: 65%;
   font-size: 20px;
   text-shadow: 2px 2px 3px black;
+  opacity: 0; /* Oculta el texto inicialmente */
+  transition: opacity 0.3s ease; /* Suaviza la aparición del texto */
+}
+.hover-effect:hover .texto_sub_menu {
+  opacity: 1; /* El texto aparece al hacer hover */
+}
+.hover-effect:hover .btn_estilo {
+  opacity: 1; /* El texto aparece al hacer hover */
+}
+
+.carousel-caption{
+  text-shadow: 2px 2px 3px #1E1E1E;
+  font-size: 50px;
+}
+
+.btn_busqueda{
+  
+  background-color:#282828;
+  
+  border: 0;
+  border-radius: 2px;
+  color: white;
+
+}
+
+.nav-item{
+  font-size: 18px;
+  margin: 8px;
+}
+
+#sap{
+  width: 40%;
+  text-align: center;
+}
+#sap2{
+  width: 1000px;
+  text-align: center;
+}
+.navbar{
+  background-color:#1E1E1E;
+  opacity: 0.9888;
+}
+
+.btn-primary {
+  background-color: #365B2D !important; /* Cambia el color de fondo */
+  border-color: #365B2D !important;     /* Cambia el color del borde */
+}
+
+.btn-primary:hover {
+  background-color: #218838 !important; /* Cambia el color en hover */
+  border-color: #1e7e34 !important;     /* Cambia el borde en hover */
 }
