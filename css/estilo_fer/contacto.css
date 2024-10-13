@@ -1,0 +1,163 @@
+body {
+    background-image: url('/Proyecto_nombre_de_dios/img/img_fer/contactoo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid {
+    background-color: #000000;
+}
+
+.menu {
+    float: right;
+    margin-top: 18px;
+}
+.formulario-de-contacto{
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: auto;
+    color: white;
+    margin-top: 80px;
+}
+
+#user {
+    height: 20px;
+    width: 30px;
+    margin-top: 4px;
+    
+}
+#pad {
+    margin-right: 20px;
+    font-weight: 700;
+    color: #4f4e4e;
+    color: inherit;
+    text-decoration: none;
+    color: #626060;
+}
+
+#pad:hover {
+    color: rgb(255, 255, 255);
+}
+.encabezado img {
+    height: 30px;
+    background-color: #000000;
+    padding: 0;
+    margin-top: 10px;
+
+}
+.encabezado  {
+    height: 75px;
+    background-color: #000000;
+    padding: 0;
+    opacity: 0.9888;
+
+}
+
+.navbar-brand {
+    color: #615e5e;
+
+}
+
+.cont::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#email::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#phone::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#comment::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#name, #email, #phone, #comment {
+    background-color: #222121;
+    border-color: #222121;
+    color: white;
+}
+
+#letra {
+    font-weight: 500;
+}
+
+#name, #email, #phone, #comment:focus {
+    outline: none; 
+    box-shadow: none; 
+    border-color: #333; 
+}
+
+#botton:hover {
+    background-color: #47743b;
+}
+
+.sopa {
+    margin: 10px 0px;
+}
+
+label {
+    margin: 5px;
+}
+
+.enviar {
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    width: 50%;
+    border: none;
+    height: 35px;
+    background-color: #365B2D;
+    
+}
+
+.d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cont {
+    width: 100%;
+    border-radius: 6px;
+    height: 40px;
+    border-color: #333;
+    border: none;
+    padding: 14px;
+}
+
+.comentario {
+    height: 30px;
+}
+
+.texto {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+#comment {
+    width: 100%;
+    border-radius: 6px;
+    height: 90px;
+    border-color: #333;
+    border: none;
+    padding: 14px;
+}
+
+.log{
+    height: 200px;
+}
+ #logo1{
+    height: 200px;
+ }

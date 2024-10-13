@@ -42,9 +42,6 @@
     font-size: small;
   }
 }
-
-
-
   
 
 /* GLOBAL STYLES
@@ -146,14 +143,55 @@ body {
     margin-top: 7rem;
   }
 }
+/*Inicio de valores css para modal (pantalla emergente)*/
+dialog{
+  position: fixed;
+  opacity: 10;
+}
 
   /* Estilos para quitar bordes y cambiar color de fondo */
 
+  .container-modal{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  #modalRegistro{
+    background-color: rgb(51, 58, 56);
+    border: 1px;
+    text-align: center;
+    width: 800px;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px rgb(22, 48, 16);
+    opacity: 97.5%;
+    color: beige;
+    align-items: center;
+    right: 0%;
+    top: 6%;
+  
+  
+   }
 #myCarousel{
   margin-bottom: 0px;
 
    }
- 
+ #modal{
+  background-color: rgb(51, 58, 56);
+  border: 1px;
+  text-align: center;
+  width: 800px;
+  height: 80%;
+  border-radius: 5px;
+  box-shadow: 1px 5px 5px rgb(22, 48, 16);
+  opacity: 97.5%;
+  color: beige;
+  align-items: center;
+  right: 0%;
+  top: 6%;
+
+
+ }
  #enviar{
   border: 0px;
   background-color: rgb(58, 59, 59);
@@ -162,18 +200,21 @@ body {
 
  }
 
+ #modal::backdrop{
+  background-color: rgba(0, 0, 0, 0.7)
+ }
+
+
 .container_footer{
   height: 100%;
   background-color:#1E1E1E;
   margin-bottom: 0px;
-  display: inline;
   height: 100px;
-  float: inline-start;
+  position:absolute;
   width: 100%;
-  position: relative;
   color: #ebebeb;
   align-items: center;
-  margin: 0;
+  padding: 30px;
   font-size: large;
 }
 .link-footer{
@@ -211,7 +252,6 @@ body {
   opacity: 0;
   transition: 0.6s; 
   ;
-  text-decoration: none;
   
 
 }
@@ -356,31 +396,4 @@ body {
 .btn-primary:hover {
   background-color: #218838 !important; /* Cambia el color en hover */
   border-color: #1e7e34 !important;     /* Cambia el borde en hover */
-
-
-}
-
-.ficha{
-  width: 540px;
-  height: 629px;
-  background-color: rgb(248, 248, 248);
-  box-shadow: 2px 2px 8px black;
-  display: flex;
-  text-align: center;
-  color:black;
-  border-radius: 5px;
-  
-  
-  
-
-}
-.ficha_img{
-  
-  text-align:center;
-  display: flex;
-}
-.contactos{
-  float:right;
-  right: 50%;
-  padding: 0px;
 }

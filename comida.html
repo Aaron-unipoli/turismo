@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Barra de navegación */
+        .navbar {
+            background-color: #2c2d2e;
+            height: 80px;
+        }
+        .navbar .nav-link {
+            color: white;
+            font-weight: 500;
+            margin-right: 20px;
+        }
+        .navbar .nav-link:hover {
+            color: #ccc;
+        }
+        .navbar-brand img {
+            width: 50px;
+        }
+        .search-box {
+            position: relative;
+        }
+        .search-box input {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 20px;
+        }
+        .search-box input::placeholder {
+            color: #aaa;
+        }
+        .search-box button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: none;
+            background: none;
+            color: white;
+        }
+
+        /* Perfil de usuario */
+        .profile-header {
+            padding: 40px;
+            text-align: start;
+            background-color: white;
+            margin-top: -20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .profile-header h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .profile-header p {
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .profile-header hr {
+            width: 80%;
+            margin: 20px auto;
+            border: 0.5px solid #ccc;
+        }
+
+        /* Listas */
+        .section-title {
+            font-size: 18px;
+            margin-top: 30px;
+            color: #333;
+            padding-left: 15px;
+        }
+        .list-group-item {
+            background-color: #f7f7f7;
+            border: none;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            padding: 15px 20px;
+            color: #333;
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <ion-icon name="bus"></ion-icon>Turismo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">VisitaDgo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Municipios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pueblos Mágicos</a>
+                    </li>
+                </ul>
+                <form class="search-box d-flex">
+                    <input type="text" placeholder="Escribe tu destino">
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-person"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+  <div class="container my-5 content">
+    <div class="row mb-5">
+      <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+        <h2 class="section-title"><i class="ion-ios-restaurant"></i> Gorditas "Doña Aleja"</h2>
+        <p>Por más de 60 años las Gorditas de Doña Aleja han deleitado a comensales foráneos y locales. Del comal al paladar salen las gorditas de maíz, harina, rellenas de chicharrón, rajas con queso, huevo, carne deshebrada, picadillo, requesón, moronga y frijoles. También ofrecen quesadillas y burritos a precios económicos.</p>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <img src="resourcesprueba4/gorditas.jpg" alt="Gorditas Doña Aleja" class="img-fluid">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <img src="resourcesprueba4/r2df-Galeria-Estacion-Cafe-Restaurant-and-Bar-interior-2022-07.jpg" alt="Galería Estación Café" class="img-fluid">
+      </div>
+      <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+        <h2 class="section-title"><i class="ion-ios-train"></i> Galería Estación Café, Restaurante</h2>
+        <p>La Galería Estación de Ferrocarril es un restaurante ubicado en Durango, México, que combina historia y gastronomía. Este establecimiento se sitúa en un antiguo edificio de la estación de tren, lo que le otorga un encanto único y un ambiente nostálgico.</p>
+        <p>El restaurante ofrece una amplia variedad de platillos típicos de la región, resaltando sabores locales y frescos en un entorno acogedor.</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Pie de página -->
+    <footer class="footer mt-4">
+        <div class="container">
+            <p>© 2024 - 2025 Ichiban, Inc. Privacy Terms.</p>
+            <div class="social-icons">
+                <a href="#">Contáctanos</a> | 
+                <a href="#">¡Síguenos!</a>
+                <a href="#"><i class="ion-social-facebook"></i></a>
+                <a href="#"><i class="ion-social-instagram"></i></a>
+                <a href="#"><i class="ion-social-twitter"></i></a>
+                <a href="#"><i class="ion-social-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
