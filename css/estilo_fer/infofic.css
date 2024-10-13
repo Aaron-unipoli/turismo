@@ -193,6 +193,7 @@ body {
     background-color: #000000; 
     box-sizing: border-box;
     opacity: 0.9888;
+    position: fixed;
 }
 
 .menu {
