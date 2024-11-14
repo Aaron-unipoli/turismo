@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo - Discover Mexico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="../assets/css/actividades.css">
+</head>
+<body>
+    <header class="bg-dark-zinc text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/img_fer/logotipo.png" alt="Logo" height="30"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="lie">VisitaDgo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" id="lie">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mosaicoMunicipios.html" id="lie">Municipios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="lie">Pueblos Mágicos</a>
+                        </li>
+                        <li class="nav-item">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Buscar">
+                                <button class="btn btn-dark" type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                <img src="../assets/img/img_fer/user2.png" alt="user" height="20" id="user">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="row mb-5 align-items-center" id="mezcalRoute">
+            <div class="col-md-6">
+                <h2 class="mb-3">Ruta del Mezcal, El sabor de México</h2>
+                <p>La Ruta del Mezcal en Nombre de Dios, integra 14 viñatas y fue creada para que turistas y los mismos duranguenses conozcan de una manera didáctica el proceso de jimar, el proceso de cocción, la molienda y luego ver el resultado final que son las lágrimas del mezcal, y disfrutar de las artesanías y gastronomía típica de la zona.</p>
+                <p>Nombre de Dios está situado a 55 kilómetros de la capital de Durango, fue fundado por Francisco de Ibarra en 1562, es la municipalidad más antigua del estado y de todo el noroeste de la Nueva España, es un pueblo rico en arte, historia, tradición, bellezas naturales y gastronomía.</p>
+
+            </div>
+            <div class="col-md-6">
+                <img src="../assets/img/media/tirolesa.jpeg" alt="Mezcal production process" class="img-fluid rounded">
+            </div>
+            <div class="d-flex gap-3">
+                <a href="#" class="text-dark"><i class="bi bi-map"></i></a>
+
+            </div>
+        </section>
+
+        <section class="row mb-5 align-items-center" id="miningTunnel">
+            <div class="col-md-6 order-md-2">
+                <h2 class="mb-3">Túnel de Minería, una Aventura Cautivadora</h2>
+                <p>Es toda una experiencia que busca rescatar antiguas leyendas del centro histórico y mostrar la historia de la minería en Durango, en especial de la capital.</p>
+                <p>En el interior del túnel se exhiben herramientas de trabajo y medios de transporte utilizados en las minas, vestimentas de mineros y una amplia colección de minerales. <a href="#" class="text-dark"><i class="bi bi-map"></i></a></p>
+
+                <a href="#" class="text-dark"><i class="bi bi-map"></i></a>
+                <button class="btn btn-primary mt-3" id="learnMoreMining">Learn More</button>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="../assets/img/img_man/mcr.png" alt="Mining tunnel" class="img-fluid rounded">
+            </div>
+        </section>
+    </main>
+    <footer class="pie_pagina">
+        <div>
+            <p>
+                <a href="#" class="link-footer"><i class="bi bi-facebook">&nbsp;&nbsp;</i></a>
+                <a href="#" class="link-footer"><i class="bi bi-instagram">&nbsp;&nbsp;</i></a>
+                <a href="#" class="link-footer"><i class="bi bi-twitter">&nbsp;&nbsp;</i></a>
+                <a href="#" class="link-footer">!Síguenos¡ &nbsp;</a>
+                <a href="contacto.html" class="link-footer">Contacto&nbsp;&nbsp;</a>
+            </p>
+            <p>&copy; 2024-2050 Ichiba, Inc. &middot; <a href="#" class="link-footer">Privacy</a> &middot; <a href="#" class="link-footer">Terms</a></p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="infoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalBody"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = new bootstrap.Modal(document.getElementById('infoModal'));
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+
+            document.getElementById('learnMoreMezcal').addEventListener('click', function() {
+                modalTitle.textContent = 'Ruta del Mezcal';
+                modalBody.textContent = 'The Mezcal Route offers a unique experience to learn about the traditional production of this iconic Mexican spirit. Visitors can explore 14 different vinatas (mezcal distilleries) and witness every step of the process, from harvesting agave to the final product.';
+                modal.show();
+            });
+
+            document.getElementById('learnMoreMining').addEventListener('click', function() {
+                modalTitle.textContent = 'Túnel de Minería';
+                modalBody.textContent = 'The Mining Tunnel is an immersive experience that takes visitors through the rich mining history of Durango. Inside, you\'ll find exhibits of traditional mining tools, transportation methods, and an extensive collection of minerals, bringing the region\'s mining heritage to life.';
+                modal.show();
+            });
+        });
+    </script>
+</body>
+</html>

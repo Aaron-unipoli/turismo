@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.container-fluid {
+    height: 100%;
+}
+
+#col-izquierda {
+    background-image: url('../img/img_fer/logi.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+#col-derecha {
+    background-color: #000000;
+    color: white;
+    min-height: 100vh; 
+    background-size: cover;
+}
+
+.lol {
+    width: 25%;
+}
+
+#imagen {
+    float: right;
+    margin-top: 30px;
+}
+
+
+
+.text {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 30%;
+}
+
+
+
+.in {
+    border-radius: 30px;
+    background-color: #365B2D;
+    color: white;
+    font-weight: 600;
+    width: 80%;
+    border: none;
+    height: 55px;
+    margin-left: 13%;
+    margin-top: 5%;
+}
+
+.in:hover {
+    background-color: #47743b;
+}
+
+
+
+
+

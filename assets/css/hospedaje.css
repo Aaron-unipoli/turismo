@@ -1,0 +1,49 @@
+.hotel-image {
+    height: 250px;
+    object-fit: cover;
+    
+}
+.navbar {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
+background-color: #000000;
+color: #ffffff;
+}
+#navbarNav {
+font-weight: 500;
+
+}
+
+#lie:hover {
+color: #ffffff;
+}
+
+.form-control {
+color: #000000; /* Color negro para el texto ingresado */
+background-color: #444444;/* Fondo blanco para el campo de búsqueda */
+
+}
+.form-control::placeholder {
+color: #888888; /* Color gris para el texto de placeholder */
+}
+
+.pie_pagina {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+.link-footer {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.card {
+border: none;
+}

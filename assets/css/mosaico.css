@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: #000000;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000000;
+    color: #ffffff;
+}
+#navbarNav {
+    font-weight: 500;
+
+}
+
+#lie:hover {
+    color: #ffffff;
+}
+
+.form-control {
+    color: #000000; /* Color negro para el texto ingresado */
+    background-color: #444444;/* Fondo blanco para el campo de búsqueda */
+    border: 0px solid #444444;
+}
+.form-control::placeholder {
+    color: #888888; /* Color gris para el texto de placeholder */
+}
+
+.pie_pagina {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+.link-footer {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Estilo de cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    width: 100vw;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 100px; /* Espacio para evitar superposición con el pie de página */
+}
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Overlay oscuro */
+.grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease;
+    opacity: 0; /* Oculto por defecto */
+}
+/* Texto centrado, visible solo en hover */
+.grid-item h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    z-index: 1;
+    margin: 0;
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.3s ease;
+}
+/* Hover efecto para la superposición y el texto */
+.grid-item:hover::before {
+    opacity: 1; /* Mostrar overlay oscuro */
+}
+.grid-item:hover h3 {
+    opacity: 1; /* Mostrar texto */
+}
+
+#user:hover{
+    border-color: #ffffff;
+}

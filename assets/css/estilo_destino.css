@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+}
+#colum1{
+    padding: 37px;
+    background-color:rgb(252, 249, 244);
+    height: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+#colum2{
+    padding: 30px;
+    background-color: rgb(243, 243, 243);
+    height: 500px;
+    box-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.5);
+}
+#titulo_lugar ,h2{
+    
+    font-style: initial;
+    padding-bottom: 10px;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#titulo_lugar2{
+    padding-bottom: 10px;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#articulo{
+    font-family: 'Times New Roman', Times, serif;
+}
+#dato{
+    padding: 5px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_footer {
+    height: 90px;
+    background-color: rgb(49, 49, 49);
+    border-top: 5px solid red;
+    margin-top: auto;
+    align-items: center;
+    padding: 45px;
+}
+
+#company{
+    align-items: center;
+}
+.custom-btn {
+    border-color: red;
+    color: red; /* Cambia también el color del texto para que coincida */
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  /* GLOBAL STYLES --------------------------------------------- */
+  body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+  }
+
+  /* CUSTOMIZE THE CAROUSEL -------------------------------------------- */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+
+  .carousel-item {
+    height: 925px;
+  }
+
+  .carousel-item>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 925px;
+  }
+
+  /* MARKETING CONTENT -------------------------------------------------- */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .marketing h2 {
+    font-weight: 400;
+  }
+
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  /* Featurettes ------------------------- */
+  .featurette-divider {
+    margin: 5rem 0;
+  }
+
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+  /* RESPONSIVE CSS -------------------------------------------------- */
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+  /*modal*/
+  #modal{
+    background-color: rgb(51, 58, 56);
+    border: 1px;
+    text-align: center;
+    width: 40%;
+    height: 55%;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px rgb(22, 48, 16);
+    opacity: 97.5%;
+    color: beige;
+    align-items: center;
+  
+   }
+   #enviar{
+    border: 0px;
+    background-color: rgb(58, 59, 59);
+    border-radius: 2px;
+    box-shadow: 0px 1px  beige;
+   }

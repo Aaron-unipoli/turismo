@@ -1,0 +1,399 @@
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.lead{
+  margin: auto;
+  top: 0;
+  padding: 5px;
+  
+}
+.bd{
+  margin: auto;
+  
+}
+.featurette{
+  padding: auto;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 12px;
+  }
+}
+@media (min-height: 200px) {
+  .carousel {
+    min-height: 500px; /* Altura mínima del carrusel */
+  }
+}
+
+@media (max-height: 400px) {
+  .carousel {
+    min-height: 300px; /* Altura mínima para pantallas más pequeñas */
+  }
+}
+@media (min-width:768px){
+
+  .carousel-caption{
+    font-size: small;
+  }
+}
+  
+
+/* GLOBAL STYLES
+--------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 925px;
+  box-shadow: 2px 5px 2px black;
+  
+}
+
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+/*Inicio de valores css para modal (pantalla emergente)*/
+dialog{
+  position: fixed;
+  opacity: 10;
+}
+
+  /* Estilos para quitar bordes y cambiar color de fondo */
+
+  .container-modal{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  #modalRegistro{
+    background-color: rgb(51, 58, 56);
+    border: 1px;
+    text-align: center;
+    width: 800px;
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 1px 5px 5px rgb(22, 48, 16);
+    opacity: 97.5%;
+    color: beige;
+    align-items: center;
+    right: 0%;
+    top: 6%;
+  
+  
+   }
+#myCarousel{
+  margin-bottom: 0px;
+
+   }
+ #modal{
+  background-color: rgb(51, 58, 56);
+  border: 1px;
+  text-align: center;
+  width: 800px;
+  height: 80%;
+  border-radius: 5px;
+  box-shadow: 1px 5px 5px rgb(22, 48, 16);
+  opacity: 97.5%;
+  color: beige;
+  align-items: center;
+  right: 0%;
+  top: 6%;
+
+
+ }
+ #enviar{
+  border: 0px;
+  background-color: rgb(58, 59, 59);
+  border-radius: 2px;
+  box-shadow: 0px 1px  beige;
+
+ }
+
+ #modal::backdrop{
+  background-color: rgba(0, 0, 0, 0.7)
+ }
+
+
+.container_footer{
+  height: 100%;
+  background-color:#1E1E1E;
+  margin-bottom: 0px;
+  height: 100px;
+  position:absolute;
+  width: 100%;
+  color: #ebebeb;
+  align-items: center;
+  padding: 30px;
+  font-size: large;
+}
+.link-footer{
+  color: #ebebeb;
+  text-decoration: none;
+  
+}
+.link-footer:hover{
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+
+.img_sub_menu{
+  margin: 0px;
+
+  height:900px ;
+  color: #ebebeb;
+  text-align: center;
+  padding-top: 78%;
+  text-shadow: 2px 2px 3px black;
+  font-size: large;
+
+}
+
+
+.btn_estilo {
+  background-color: #365B2D; /* Color de fondo personalizado */
+  color: white; /* Color del texto */
+  border: none; /* Elimina el borde si no quieres uno */
+  width: 150px;
+  padding: 10px;
+  height: 50px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.6s; 
+  ;
+  
+
+}
+.btn_estilo:hover{
+  background-color: #1E1E1E;
+}
+.btn_link{
+  color: #ebebeb;
+  text-decoration: none;
+}
+.btn_link:hover{
+  color: #ebebeb;
+  text-decoration: none;
+}
+
+
+
+.text_sub_menu{
+  opacity: 0;
+  transition: 0.6s;
+}
+.text_sub_menu:hover{
+  opacity: 1;
+}
+
+#openModa1{
+  align-items: end;
+}
+
+#separador{
+  width: 100%;
+  height: 25px;
+  background-color: black;
+  
+}
+.sub_menu{
+  height: 1000px;
+}
+
+#img_sub_menu_1{
+  background-color: #365B2D;
+  background-image: url("../img/Hospedaje.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flexbox;
+}
+
+
+#img_sub_menu_2{
+  background-color: #365B2D;
+  background-image: url("../img/tirolesa.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+#img_sub_menu_3{
+  background-color: #365B2D;
+  background-image: url("../img/taquitos.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+
+.hover-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Sin opacidad inicialmente */
+  transition: background-color 0.3s ease;
+}
+
+.hover-effect:hover::before {
+  background-color: rgba(0, 0, 0, 0.7); /* Opacidad de color negro al hacer hover */
+}
+
+.texto_sub_menu {
+  position: relative;
+  z-index: 1; /* Para que el texto esté por encima de la capa negra */
+  color: white; /* Para que el texto sea visible sobre el fondo oscuro */
+  text-align:  center;
+  padding-top: 65%;
+  font-size: 20px;
+  text-shadow: 2px 2px 3px black;
+  opacity: 0; /* Oculta el texto inicialmente */
+  transition: opacity 0.3s ease; /* Suaviza la aparición del texto */
+}
+.hover-effect:hover .texto_sub_menu {
+  opacity: 1; /* El texto aparece al hacer hover */
+}
+.hover-effect:hover .btn_estilo {
+  opacity: 1; /* El texto aparece al hacer hover */
+}
+
+.carousel-caption{
+  text-shadow: 2px 2px 3px #1E1E1E;
+  font-size: 50px;
+}
+
+.btn_busqueda{
+  
+  background-color:#282828;
+  
+  border: 0;
+  border-radius: 2px;
+  color: white;
+
+}
+
+.nav-item{
+  font-size: 18px;
+  margin: 8px;
+}
+
+#sap{
+  width: 40%;
+  text-align: center;
+}
+#sap2{
+  width: 1000px;
+  text-align: center;
+}
+.navbar{
+  background-color:#1E1E1E;
+  opacity: 0.9888;
+}
+
+.btn-primary {
+  background-color: #365B2D !important; /* Cambia el color de fondo */
+  border-color: #365B2D !important;     /* Cambia el color del borde */
+}
+
+.btn-primary:hover {
+  background-color: #218838 !important; /* Cambia el color en hover */
+  border-color: #1e7e34 !important;     /* Cambia el borde en hover */
+}

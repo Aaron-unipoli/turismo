@@ -1,0 +1,161 @@
+body {
+    background-image: url('../img/img_fer/contactoo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid {
+    background-color: #000000;
+}
+
+
+.formulario-de-contacto{
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 400px;
+    margin: auto;
+    color: white;
+    margin-top: 80px;
+}
+
+.pie_pagina {
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+.link-footer {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.form-control {
+    color: #000000; /* Color negro para el texto ingresado */
+    background-color: #444444;/* Fondo blanco para el campo de búsqueda */
+    border: 0px solid #444444;
+}
+.form-control::placeholder {
+    color: #888888; /* Color gris para el texto de placeholder */
+}
+
+
+.cont::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#email::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#phone::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#comment::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#name, #email, #phone, #comment {
+    background-color: #222121;
+    border-color: #222121;
+    color: white;
+}
+
+#letra {
+    font-weight: 500;
+}
+
+#name, #email, #phone, #comment:focus {
+    outline: none; 
+    box-shadow: none; 
+    border-color: #333; 
+}
+
+#botton:hover {
+    background-color: #47743b;
+}
+
+.sopa {
+    margin: 10px 0px;
+}
+
+label {
+    margin: 5px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000000;
+    color: #ffffff;
+}
+#navbarNav {
+    font-weight: 500;
+
+}
+
+.enviar {
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    width: 50%;
+    border: none;
+    height: 35px;
+    background-color: #365B2D;
+    
+}
+
+.d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cont {
+    width: 100%;
+    border-radius: 6px;
+    height: 40px;
+    border-color: #333;
+    border: none;
+    padding: 14px;
+}
+
+.comentario {
+    height: 30px;
+}
+
+.texto {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+#comment {
+    width: 100%;
+    border-radius: 6px;
+    height: 90px;
+    border-color: #333;
+    border: none;
+    padding: 14px;
+}
+
+.log{
+    height: 200px;
+}
+ #logo1{
+    height: 200px;
+ }
+ .comentario {
+    height: 30px;
+}

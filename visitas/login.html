@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página de Usuario</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Columna izquierda -->
+            <div id="col-izquierda" class="col-md-7">
+                <!-- Contenido de la columna izquierda -->
+            </div>
+
+            <!-- Columna derecha -->
+            <div id="col-derecha" class="col-md-5">
+                <a href="index.html"><img id="imagen" src="../assets/img/img_fer/logotipo.png" class="lol"></a>
+                
+                <!-- Formulario debajo del título -->
+                <form class="form">
+                    <h1 class="titulo">Bienvenido de vuelta</h1>
+                    <div class="hol">
+                        <label id="nombre" for="email" class="formulario">Email</label>
+                        <input id="email" type="email" class="control" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="hol">
+                        <label id="nombre" for="password" class="formulario">Contraseña</label>
+                        <!--revisar-->
+                        <a id="link" href="#" class="contera">¿Has olvidado tu contraseña?</a>
+                        <div class="input">
+                            <input type="password" class="control" id="password" placeholder="Ingresa tu contraseña">
+                        </div>
+                    </div>
+                    <!--centrar-->
+                    <div class="d">
+                        <button id="boton" type="entra" class="primero">Iniciar sesión</button>
+                    </div>
+                    <div id="tex" class="hola">
+                        <span>O inicia sesión con</span>
+                    </div>
+                    <div class="cel">
+                        <button id="goo" class="googlee" type="button">
+                            <i class="bi bi-google"></i> Google
+                        </button>
+                        <button id="fac" class="facebooook" type="button">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </button>
+                    </div>
+                    <div id="span" class="hola">
+                        <span class="texto1">¿Todavía no tienes una cuenta? <a id="link" href="TipodeUser.html">Crea una ahora</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necesario para Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap 5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+.custom-menu-txt{
+    font-size: 20px;
+  }
+  .custom-black {
+  background-color: black;
+  color: #ffffff !important; /* o background-color según el contexto */
+  
+  }
+  #ficha{
+    height: 150px;
+  }
+  .texto_sub_menu {
+position: relative;
+z-index: 1;
+color: white;
+text-align: center;
+padding-top: 65%;
+font-size: 20px;
+text-shadow: 2px 2px 3px black;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+.img_sub_menu{
+margin: 0px;
+
+height:900px ;
+color: #ebebeb;
+text-align: center;
+padding-top: 78%;
+text-shadow: 2px 2px 3px black;
+font-size: large;
+
+}
+#img_sub_menu_1{
+background-color: #365B2D;
+background-image: url("../img/media/Hospedaje.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 800px;
+margin: 3px;
+display: flexbox;
+}
+
+
+#img_sub_menu_2{
+background-color: #365B2D;
+background-image: url("../img/media/tirolesa.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 800px;
+margin: 3px;
+}
+#img_sub_menu_3{
+background-color: #365B2D;
+background-image: url("../img/media/comida.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 800px;
+margin: 3px;
+}
+.hover-effect {
+position: relative;
+overflow: hidden;
+}
+
+.hover-effect::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0); /* Sin opacidad inicialmente */
+transition: background-color 0.3s ease;
+border-bottom: #218838;
+}
+
+.hover-effect:hover::before {
+background-color: rgba(0, 0, 0, 0.9); /* Opacidad de color negro al hacer hover */
+}
+
+.texto_sub_menu {
+position: relative;
+z-index: 1; /* Para que el texto esté por encima de la capa negra */
+color: white; /* Para que el texto sea visible sobre el fondo oscuro */
+text-align:  center;
+padding-top: 65%;
+font-size: 20px;
+text-shadow: 2px 2px 3px black;
+opacity: 0; /* Oculta el texto inicialmente */
+transition: opacity 0.3s ease; /* Suaviza la aparición del texto */
+}
+.hover-effect:hover .texto_sub_menu {
+opacity: 1; /* El texto aparece al hacer hover */
+}
+.hover-effect:hover .btn_estilo {
+opacity: 1; /* El texto aparece al hacer hover */
+}
+
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000000;
+    color: #ffffff;
+}
+#navbarNav {
+    font-weight: 500;
+
+}
+
+.pie_pagina {
+
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+.link-footer {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.form-control {
+    color: #000000; /* Color negro para el texto ingresado */
+    background-color: #444444;/* Fondo blanco para el campo de búsqueda */
+    border: 0px solid #444444;
+}
+.form-control::placeholder {
+    color: #888888; /* Color gris para el texto de placeholder */
+}
+
+.sub_menu{
+    background-color: #000000;
+
+}
+.sola {
+    background-color: #000000;
+    height: 100px;
+    max-width: 100%;
+}
+.solo {
+    background-color: #000000;
+    height: 100px;
+    max-width: 100%;
+}
+
+.btn_estilo{
+    background-color: #365B2D;
+    border-color: #365B2D;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    width: 40%;
+    border: none;
+    height: 35px;
+    margin-top: 15px;
+
+}
+.infer{
+    font-weight: 400;
+    font-size: medium;
+}

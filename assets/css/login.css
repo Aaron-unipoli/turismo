@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#col-izquierda {
+    background-image: url('../img/img_fer/Login.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#col-derecha {
+    background-color: #000000;
+    color: white;
+    height: 100vh;
+}
+
+.lol {
+    width: 25%;
+}
+.formulario {
+    align-items: center;
+    
+}
+
+.titulo {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#password {
+    color: white;
+}
+
+#email {
+    background-color: #222121;
+    border-color: #222121;
+    color: white;
+}
+
+#email::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#password {
+    background-color: #222121;
+    border-color: #222121;
+}
+
+#password::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#boton {
+    background-color: #365B2D;
+    border-color: #365B2D;
+}
+
+#fac, #goo {
+    background-color: #222121;
+    border-color: #574F4F;
+    width: 150px;
+}
+label {
+    margin: 5px;
+}
+
+
+#tex {
+    color: rgb(136, 135, 135);
+}
+
+.hol {
+    margin: 30px 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#imagen {
+    float: right;
+    margin-top: 30px;
+}
+
+#nombre {
+    font-weight: 500;
+}
+
+#link {
+    color: inherit;
+    text-decoration: none;
+    color: #626060;
+    font-weight: 550;
+    font-size: 15px;
+
+}
+
+
+.texto1 {
+    font-weight: 300;
+}
+
+
+
+#email, #password:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #333;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hola {
+    margin-top: 20px;
+
+    
+    
+}
+.form {
+    width: 100%;
+    margin-top: 100px;
+}
+.control {
+    width: 100%;
+    border-radius: 6px;
+    height: 40px;
+    border-color: #333;
+    border: none;
+    padding: 14px;
+}
+
+.primero {
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    width: 80%;
+    border: none;
+    height: 35px;
+    margin-left: 10%;
+    
+}
+#boton:hover {
+    background-color: #47743b;
+}
+.googlee, .facebooook{
+    border-radius: 10px;
+    color: rgb(212, 203, 203);
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    height: 35px;
+    margin: 4px;
+}
+.cel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 4%;
+
+}
+.hola {
+    margin-top: 20px;
+    text-align: center;
+}
+.contera {
+    float: right;
+}
+#fac:hover {
+    background-color: rgb(151, 144, 144);
+}
+#goo:hover {
+    background-color: rgb(151, 144, 144);
+}

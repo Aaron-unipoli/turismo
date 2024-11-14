@@ -1,0 +1,157 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.container-fluid {
+    height: 100%;
+}
+
+#col-izquierda {
+    background-image: url('../img/img_fer/logi.jpg'); 
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+#col-derecha {
+    background-color: #000000;
+    color: white;
+    min-height: 100vh; 
+    background-size: cover;
+}
+
+.lol {
+    width: 25%;
+}
+
+#imagen {
+    float: right;
+    margin-top: 30px;
+}
+
+.form {
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+.text {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.control {
+    width: 100%;
+    border-radius: 6px;
+    height: 40px;
+    border-color: #333;
+    border: none;
+    padding: 14px;
+}
+
+.hol {
+    margin: 10px 0px;
+}
+
+.row-contra {
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-bottom: 32px; 
+    gap: 20px;
+}
+#contra, #confirm {
+    width: 100%;
+}
+
+.in {
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    height: 35px;
+}
+
+#confirm {
+    float: right;
+}
+.col-1, .col-2 {
+    width: 100%;
+}
+
+
+#nombre, #apellido, #usuario, 
+#telefono, #email, #password,
+#confirma {
+    background-color: #222121;
+    border-color: #222121;
+    color: white;
+}
+
+#nombre::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#apellido::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#usuario::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#telefono::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#email::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#password::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+#confirma::placeholder {
+    color: rgb(136, 135, 135);
+}
+
+
+label {
+    color: #b0b0b0;
+    font-weight: 600;
+}
+.form-control {
+    background-color: #333;
+    border: 1px solid #555;
+    color: rgb(80, 80, 80);
+}
+#boton {
+    background-color: #365B2D;
+    border-color: #365B2D;
+}
+
+#boton:hover {
+    background-color: #47743b;
+}
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+#nombre, #apellido, #usuario, 
+#telefono, #email, #password,
+#confirma:focus {
+    outline: none; 
+    box-shadow: none; 
+    border-color: #333; 
+}
+
+
+.form-control :focus {
+    outline: none; 
+    box-shadow: none; 
+    border-color: #333; 
+}
